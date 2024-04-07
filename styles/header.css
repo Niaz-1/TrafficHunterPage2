@@ -1,0 +1,612 @@
+
+
+
+
+
+
+
+.header__bg__image{
+    background: url('./../img/header/H1.svg') center no-repeat;
+    background-size: cover;
+    min-height: 936px;
+}
+
+.navbar__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.navbar__list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header__phone__number{
+    width: 10vw;
+}
+
+.logo{
+    width: 6vw;
+}
+
+.navbar__item__link{
+    font-size: 24px;
+}
+
+.burger__menu{
+    display: none;
+}
+
+.menu__burger__inner{
+    display: none;
+}
+
+.active__menu{
+    min-height: 100vh;
+    width: 100vw;
+    background: #161423;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.menu__head{
+    padding: 5vw;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__navbar .navbar__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.menu__navbar .navbar__item{
+    text-align: center;
+    width: 100%;
+    padding: 25px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu__arrow{
+    width: 18px;
+    transition: .3s;
+}
+
+.menu__arrow__active{
+    transform: rotate(-180deg);
+    transition: .3s;
+}
+
+.menu__content{
+    display: none;
+}
+
+.menu__content__active{
+    display: block;
+    margin-top: 10px;
+}
+
+.menu__content__active div{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: none;
+    border-left: none;
+    background-color: #252333;
+    padding: 25px 0;
+}
+
+.cross{
+    width: 25px;
+    height: 25px;
+}
+
+.menu__wrapper{
+    overflow-y: hidden;
+}
+
+.navbar__item{
+    position: relative;
+}
+
+.dropdown__arrow{
+    width: 18px;
+    transition: .3s;
+}
+
+.dropdown__arrow__active{
+    transition: .3s;
+    transform: rotate(-180deg);
+}
+
+.dropdown__content{
+    display: none;
+}
+
+.dropdown__content__active{
+    display: block;
+    position: absolute;
+    right: -90px;
+}
+
+.dropdown__content__active {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.dropdown__content__active div{
+    background-color: #252333;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+    text-align: center;
+}
+
+
+.header__underline__vector{
+    margin: 0 auto;
+    width: 100vw;
+}
+
+/* .header__second__underline__vector{
+    margin: 0 0 130px 0;
+} */
+
+.vector__desktop{
+    width: 100vw;
+}
+
+.vector__phone{
+    display: none;
+    width: 100vw;
+}
+
+.header__main{
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+    gap: 40px;
+    min-height: 700px;
+}
+
+.header__block{
+    display: flex;
+    align-items: center;
+}
+
+.header__left__block img{
+    /* width: 100%; */
+    max-height: 100%;
+    /* position: absolute; */
+    top: 0;
+    right: 100px;
+}
+
+.header__left__block{
+    /* position: relative; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.header__right__block{
+    padding: 145px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    /* justify-content: space-between; */
+    gap: 50px;
+}
+
+.header__ladno{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+.header__ladno__item{
+    display: flex;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0px 0px 21.5px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Greycliff CF";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 141.667% */
+}
+
+.header__title{
+    text-shadow: 0px 0px 22.4px #3B3564;
+    font-family: "Greycliff CF";
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 13px 0;
+    /* background: linear-gradient(180deg, #FFF 61.36%, #999 134.84%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.header__desc{
+    color: #CDD3DA;
+    font-family: "Greycliff CF";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 175% */
+}
+
+.header__info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+}
+
+.header__info__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 492px;
+    height: 58px;
+}
+
+.header__kazah__left{
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #CDD3DA;
+    font-family: "Greycliff CF";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 210% */
+    border-radius: 6px;
+    background: rgba(59, 53, 100, 0.76);
+}
+
+.header__kazah__right{
+    color: #CDD3DA;
+    text-align: right;
+    font-family: "Greycliff CF";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 210% */
+}
+
+
+@media screen and (max-width:1440px) and (min-width:1025px) {
+    .navbar__item__link{
+        font-size: 20px;
+    }
+    .header__title{
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:769px) {
+    .navbar__item__link{
+        font-size: 16px;
+    }
+    .header__right__block{
+        padding: 120px 0;
+    }
+    .header__main{
+        min-height: 600px;
+    }
+    .header__title{
+        font-size: 56px;
+    }
+    .header__info__item{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:431px) {
+    .navbar,
+    .header__phone__number{
+        display: none;
+    }
+    .burger__menu{
+        display: block;
+    }
+    .logo{
+        width: 12vw;
+    }
+    .burger__menu{
+        width: 7vw;
+    }
+    .vector__desktop{
+        display: none;
+    }
+    .vector__phone{
+        display: block;
+    }
+    .header__bg__image{
+        background: url('./../img/header/H1-mobile.svg') center no-repeat;
+        background-size: cover;
+        min-height: 850px;
+    }
+    .header__main{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 5vw;
+    }
+    .header__left__block{
+        display: none;
+    }
+    .header__right__block{
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 150px;
+    }
+    .header__ladno__item{
+        font-size: 20px;
+    }
+    .header__info__item{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:430px) and (min-width:376px) {
+    .navbar,
+    .header__phone__number{
+        display: none;
+    }
+    .burger__menu{
+        display: block;
+    }
+    .logo{
+        width: 18vw;
+    }
+    .burger__menu{
+        width: 7vw;
+    }
+    .vector__desktop{
+        display: none;
+    }
+    .vector__phone{
+        display: block;
+    }
+    .header__bg__image{
+        background: url('./../img/header/H1-mobile.svg') center no-repeat;
+        background-size: cover;
+        min-height: 850px;
+    }
+    .header__left__block{
+        display: none;
+    }
+    .header__main{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 5vw;
+    }
+    .header__left__block{
+        display: none;
+    }
+    .header__right__block{
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 150px;
+    }
+    .header__info__item{
+        width: 90vw;
+    }
+    .header__ladno__item{
+        font-family: "Greycliff CF";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px; /* 283.333% */
+        padding: 0 15px;
+    }
+    .header__title{
+        text-shadow: 0px 0px 22.4px #3B3564;
+        font-family: "Greycliff CF";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 0 20px 0;
+    }
+    .header__desc{
+        color: #CDD3DA;
+        font-family: "Greycliff CF";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+    }
+    .menu__navbar .navbar__item__link{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:375px) and (min-width:321px) {
+    .navbar,
+    .header__phone__number{
+        display: none;
+    }
+    .burger__menu{
+        display: block;
+    }
+    .logo{
+        width: 18vw;
+    }
+    .burger__menu{
+        width: 7vw;
+    }
+    .vector__desktop{
+        display: none;
+    }
+    .vector__phone{
+        display: block;
+    }
+    .header__bg__image{
+        background: url('./../img/header/H1-mobile.svg') center no-repeat;
+        background-size: cover;
+        min-height: 850px;
+    }
+    .header__left__block{
+        display: none;
+    }
+    .header__main{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 5vw;
+    }
+    .header__left__block{
+        display: none;
+    }
+    .header__right__block{
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 150px;
+    }
+    .header__info__item{
+        width: 90vw;
+    }
+    .header__ladno__item{
+        font-family: "Greycliff CF";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px; /* 283.333% */
+        padding: 0 15px;
+    }
+    .header__title{
+        text-shadow: 0px 0px 22.4px #3B3564;
+        font-family: "Greycliff CF";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 0 20px 0;
+    }
+    .header__desc{
+        color: #CDD3DA;
+        font-family: "Greycliff CF";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+    }
+}
+
+@media screen and (max-width:320px) {
+    .navbar,
+    .header__phone__number{
+        display: none;
+    }
+    .burger__menu{
+        display: block;
+    }
+    .logo{
+        width: 18vw;
+    }
+    .burger__menu{
+        width: 7vw;
+    }
+    .vector__desktop{
+        display: none;
+    }
+    .vector__phone{
+        display: block;
+    }
+    .header__bg__image{
+        background: url('./../img/header/H1-mobile.svg') center no-repeat;
+        background-size: cover;
+        min-height: 850px;
+    }
+    .header__left__block{
+        display: none;
+    }
+    .header__main{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 5vw;
+    }
+    .header__left__block{
+        display: none;
+    }
+    .header__right__block{
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 150px;
+    }
+    .header__info__item{
+        width: 90vw;
+    }
+    .header__ladno__item{
+        font-family: "Greycliff CF";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px; /* 283.333% */
+        padding: 0 15px;
+    }
+    .header__title{
+        text-shadow: 0px 0px 22.4px #3B3564;
+        font-family: "Greycliff CF";
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 0 20px 0;
+    }
+    .header__desc{
+        color: #CDD3DA;
+        font-family: "Greycliff CF";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,228 @@
+
+
+
+/* .reviews{
+    margin: 110px 0 0 0;
+} */
+
+
+.reviews__bg__image{
+    padding: 180px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.reviews__title{
+    color: #fff;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px; /* 111.538% */
+    margin: 70px 0;
+    width: 33vw;
+    position: relative;
+}
+
+.reviews__title::before{
+    content: '';
+    background: url('./../img/reviews/tri-poloski.svg') no-repeat;
+    height: 80px;
+    width: 70px;
+    position: absolute;
+    top: -60px;
+    left: -40px;
+}
+
+.reviews__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.reviews__card{
+    padding: 35px;
+    border-radius: 8px;
+    /* border: 1px solid #FEFEFE; */
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 7.3px 0px rgba(255, 255, 255, 0.10) inset;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 20px;
+    min-height: 400px;
+}
+
+.reviews__kovychki{
+    width: 15%;
+}
+
+.reviews__desc{
+    color: #FFF;
+    text-overflow: ellipsis;
+    font-family: "Greycliff CF";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    overflow: hidden;
+    max-height: 185px;
+}
+
+.reviews__user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviews__username,
+.hzchto{
+    font-family: "Greycliff CF";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hzchto{
+    font-size: 16px;
+}
+
+.reviews__user__avatar{
+    width: 60px;
+}
+
+
+
+.reviews__slide__dots__container{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.reviews__slide__dots{
+    display: grid;
+    grid-template-columns: 65px 13px;
+    grid-template-rows: 13px;
+    gap: 10px;
+}
+
+.dot{
+    border-radius: 13px;
+}
+
+.long__dot{
+    background-color: #FD8806;
+}
+
+.short__dot{
+    background-color: rgba(217, 217, 217, 0.25);
+}
+
+
+@media screen and (max-width:1024px) and (min-width:769px) {
+    .reviews__title{
+        width: 60vw;
+        font-size: 40px;
+    }
+    .reviews__cards {
+        overflow-x: scroll;
+        display: flex;
+    }
+    .reviews__card {
+        min-width: 265px;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:431px) {
+    .reviews__cards {
+        overflow-x: scroll;
+        display: flex;
+    }
+    .reviews__card {
+        min-width: 265px;
+    }
+    .reviews__bg__image{
+        padding: 80px 0;
+    }
+    .reviews__title{
+        width: 70vw;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width:430px) and (min-width:376px) {
+    .reviews__cards {
+        overflow-x: scroll;
+        display: flex;
+    }
+    .reviews__card {
+        min-width: 265px;
+    }
+    .reviews__bg__image{
+        padding: 80px 0;
+    }
+    .reviews__title{
+        width: 70vw;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .reviews__title::before{
+        left: -30px;
+        top: -50px;
+    }
+}
+
+@media screen and (max-width:375px) and (min-width:321px) {
+    .reviews__cards {
+        overflow-x: scroll;
+        display: flex;
+    }
+    .reviews__card {
+        min-width: 265px;
+    }
+    .reviews__bg__image{
+        padding: 80px 0;
+    }
+    .reviews__title{
+        width: 70vw;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .reviews__title::before{
+        left: -35px;
+        top: -50px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .reviews__cards {
+        overflow-x: scroll;
+        display: flex;
+    }
+    .reviews__card {
+        min-width: 265px;
+    }
+    .reviews__bg__image{
+        padding: 80px 0;
+    }
+    .reviews__title{
+        width: 90vw;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .reviews__title::before{
+        width: 40px;
+        left: -20px;
+        top: -30px;
+    }
+}
+
+
+
+
+
+
+
+
+
